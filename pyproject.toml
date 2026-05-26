@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sciencelabx"
+version = "0.0.1"
+description = "ScienceLabX: Ecosystem for Data People"
+readme = "README.md"
+authors = [
+    { 
+        name = "Emmanuel Ascendra", 
+        email = "ascendraemmanuel@gmail.com"
+    },
+    { 
+        name = "Dawin Jimenez", 
+        email = "dawinjimenezp@gmail.com" 
+    },
+    {
+        name = "Isabel Paez",
+        email = "isabelpaez@gmail.com"
+    },
+    {
+        name = "Sebastian Garcia",
+        email = "sebastiangade16@gmail.com"
+    },
+    {
+        name = "Denzel Washington",
+        email = "ddenzel86@gmail.com"
+    }
+]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Repository = "https://github.com/tu_usuario/datom"
