@@ -1,18 +1,10 @@
-from sciencelabx import DAtom
-from sciencelabx.datasets import load_dataset
-from sciencelabx.data import Data
-from sciencelabx.analysis import Descriptive, Inferential
+from sciencelabx import Data
+import pandas as pd
+import sciencelabx as scx
 
+print(scx.welcome())
 
-df = load_dataset("iris.csv")
-dt = DAtom(df, show_info=False)
+df = pd.read_csv(r"tests\datos_limpios.csv", sep=(","))
 
-# print(dt.data.show_data)
-# print(dt.data.columns)
-
-data = Data(df, show_info=False)
-# print(data.data)
-ds = Descriptive(df, show_info=False)
-
-print(dt.load("iris.csv").descriptive.mean())
-print(ds.mean())
+Data.summary_data(df, metric=["mean", "median", "mode", "count", "quantiles","min", "max", "NaN", "var", "std"], 
+                decimals=2, return_metrics=False, return_str=True)

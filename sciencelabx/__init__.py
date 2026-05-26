@@ -1,14 +1,13 @@
 """
 ScienceLabX: Ecosystem for Data People
 Autor: Emmanuel Ascendra
-Versión: 0.0.1
+Versión: 0.0.4
 """
 
-__version__ = "0.0.1"
+__version__ = "0.0.4"
 __author__ = ["Emmanuel Ascendra", "Dawin Jimenez", "Sebastian Garcia", "Isabel Paez", "Denzel Whashigton"]
 
 # Importar las clases principales
-from .datom_main import DAtom
 from .data import Data
 from .datasets import load_dataset
 # from .analysis import *
@@ -20,7 +19,6 @@ from .datasets import load_dataset
 # from .app import *
 # Definir qué se expone cuando se hace: from datom import *
 __all__ = [
-    "DAtom",
     "Data",
     "load_dataset"
 ]
@@ -29,7 +27,7 @@ def welcome():
     """Muestra información sobre la librería"""
     print(f"DAtom v{__version__}")
     print(f"Librería para Data People")
-    print(f"Autores: \n  - {__author__[0]} \n  - {__author__[1]}")
+    print(f"Autores: \n  - {__author__[0]} \n  - {__author__[1]} \n  - {__author__[2]} \n  - {__author__[3]} \n  - {__author__[4]}")
     print(f"\nModulos disponibles:")
     print("  - Data: Carga y manipulación de datos")
     print("  - Analysis: Análisis estadístico")
@@ -39,4 +37,4 @@ def welcome():
     print("  - Plots: Gráficos estadísticos")
     print("  - Report: Generación de reportes")
     print("  - App: Aplicacion web")
-    print(f"\nPara más información: help(datom)")
+    print(f"\nPara más información: help(sciencelabx)")
